@@ -50,15 +50,14 @@ export class LoginComponent implements OnInit {
             atob(data['data']['token'].split('.')[1]));
             console.log(JSON.stringify(usuarioData));
           if (usuarioData['role'] == 'ROLE_ADMIN') {
-            alert("exiba admin mlk chave");
-           // this.router.navigate(['/admin']);
+            
+           this.router.navigate(['/admin']);
           } else {
-            //this.router.navigate(['/funcionario']);
-            alert("oieees funcionario")
+            this.router.navigate(['/funcionario']);
+            
           }
         },
         err => {
-          console.log(JSON.stringify(err));
           let msg: string = "Tente novamente em instantessss.";
           if (err['status'] == 401) {
             msg = "Email/senha inválido(s)."
