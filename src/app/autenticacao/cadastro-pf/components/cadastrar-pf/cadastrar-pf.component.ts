@@ -42,7 +42,7 @@ export class CadastrarPfComponent implements OnInit {
 
   cadastrarPf() {
   	if (this.form.invalid) {
-      return false;
+      return '';
     }
 
     const cadastroPf: CadastroPf = this.form.value;

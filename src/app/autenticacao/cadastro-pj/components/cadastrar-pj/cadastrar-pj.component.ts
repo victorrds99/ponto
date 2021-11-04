@@ -42,7 +42,7 @@ export class CadastrarPjComponent implements OnInit {
 
   cadastrarPj(){
     if(this.form.invalid){
-      return false;
+      return '';
     }
     const cadastroPj: CadastroPj = this.form.value;
       this.cadastrarPjService.cadastrar(cadastroPj)

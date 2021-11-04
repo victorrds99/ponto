@@ -1,3 +1,4 @@
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NgModule } from '@angular/core';
@@ -37,7 +38,16 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
-import { LoginModule, LoginRoutingModule, CadastroPjModule, CadastroPJRoutingModule, CadastroPfModule, CadastroPfRoutingModule } from './autenticacao/';
+import { 
+  LoginModule, 
+  LoginRoutingModule, 
+  CadastroPjModule, 
+  CadastroPJRoutingModule, 
+  CadastroPfModule, 
+  CadastroPfRoutingModule
+  
+ } from './autenticacao/';
+ import { FuncionarioModule, FuncionarioRoutingModule } from './funcionario'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -58,6 +68,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CadastroPJRoutingModule,
     CadastroPfModule,
     CadastroPfRoutingModule,
+    FuncionarioModule,
+    FuncionarioRoutingModule,
     AppRoutingModule,
     
   ],
