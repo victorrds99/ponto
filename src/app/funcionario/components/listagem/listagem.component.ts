@@ -9,7 +9,7 @@ import { Sort } from '@angular/material/sort';
 import { MatSort } from '@angular/material/sort';
 
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/of';
+import 'rxjs';
 
 import {
   LancamentoService,

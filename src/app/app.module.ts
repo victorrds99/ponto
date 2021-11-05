@@ -49,6 +49,7 @@ import {
  } from './autenticacao/';
  import { FuncionarioModule, FuncionarioRoutingModule } from './funcionario'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminModule , AdminRoutingModule} from './admin'
 
 
 @NgModule({
@@ -70,6 +71,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CadastroPfRoutingModule,
     FuncionarioModule,
     FuncionarioRoutingModule,
+    AdminModule,
+    AdminRoutingModule,
+    
     AppRoutingModule,
     
   ],
